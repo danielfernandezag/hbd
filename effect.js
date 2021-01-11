@@ -34,7 +34,8 @@ $("document").ready(function () {
   });
   $("#play").click(function () {
     var audio = $(".song")[0];
-    audio.currentTime = 33;
+    audio.currentTime = 34;
+    audio.volume = 0.65;
     audio.play();
     //   audio
     $("#bulb_yellow").addClass("bulb-glow-yellow-after");

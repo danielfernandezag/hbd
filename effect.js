@@ -13,6 +13,7 @@ $("document").ready(function () {
   $("#innerspan").fadeOut("fast").delay(1500).fadeIn("slow");
   $("#turn_on").fadeOut("fast");
   $("#joey").fadeOut("fast").delay(1500).fadeIn("slow");
+  $("#yes_no").fadeOut("fast").delay(1500).fadeIn("slow");
   $(window).resize(function () {
     vw = $(window).width() / 2;
     $("#b1,#b2,#b3,#b4,#b5,#b6,#b7").stop();
@@ -100,6 +101,7 @@ $("document").ready(function () {
       .delay(1000)
       .promise()
       .done(function () {
+        $("#phoebe").fadeIn("slow");
         $("#yes")
           .fadeIn("slow")
           .delay(2000)
@@ -130,7 +132,7 @@ $("document").ready(function () {
   });
   $("#play").click(function () {
     var audio = $(".song")[0];
-    audio.currentTime = 34;
+    audio.currentTime = 12;
     audio.volume = 0.65;
     audio.play();
     //   audio
@@ -405,7 +407,7 @@ $("document").ready(function () {
           i = i + 1;
           $("p:nth-child(" + i + ")")
             .fadeIn("slow")
-            .delay(1000);
+            .delay(3000);
           if (i == 50) {
             $("p:nth-child(49)")
               .fadeOut("slow")

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
@@ -28,8 +28,9 @@
 	<link rel="stylesheet/less" href="cake.less">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
 </head>
-
-<body>
+<script >
+</script> 
+<body  >
 	<div class="loading"></div>
 	<audio class="song" controls loop>
         <source src="happy.mp3"></source>
@@ -129,8 +130,29 @@
 		<div class="navbar navbar-fixed-bottom">
 			<div class="row">
 				<div class="col-md-6 text-center col-md-offset-3">
-					<button class="btn btn-primary" id="turn_on">Empezemos</button>
-					<button class="btn btn-primary" id="play">Música</button>
+					<div id="remember" class="d-flex flex-column">
+						<img id="joey" src="./joey-friends.gif" alt="hey" />
+						<span id="innerspan">
+							Hola! recuerdas este lugar?
+						</span>
+						<div>
+							<button class="btn btn-primary" id="remember_yes">Si</button>
+							<button class="btn btn-primary" id="remember_no">Ño</button>
+						</div>
+					</div>
+					<div id="really">
+						En serio? 😞 bueno... te lo recordare.
+					</div>
+					<div id="no">
+						<p> Hace un año exactamente, te di una tarjeta muy similar </p>
+						<p> espero que te guste... </p>
+					</div>
+					<div id="yes">
+						<p> Bien entonces supongo que podemos seguir </p>
+						<p> espero que te guste... </p>
+					</div>
+					<button class="btn btn-primary" id="turn_on">primero lo primero, luces...?</button>
+					<button class="btn btn-primary" id="play">Música?</button>
 					<button class="btn btn-primary" id="bannar_coming">Decoremos</button>
 					<button class="btn btn-primary" id="balloons_flying">Globos?
 					</button>
